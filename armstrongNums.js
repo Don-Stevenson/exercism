@@ -12,9 +12,8 @@
 
 export const isArmstrongNumber = num => {
     const numArr = num.toString().split("")
-    const exp = numArr.length;
+    const exponent = numArr.length;
      return (
-      numArr.reduce((acc, curr) => acc + Math.pow(parseInt(curr), exp), 0) === num
+      numArr.reduce((acc, curr) => acc + Math.pow(parseInt(curr), exponent), 0) === num
     );
   };
-  
