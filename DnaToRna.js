@@ -12,7 +12,8 @@
 
 // Given a DNA strand, its transcribed RNA strand is formed by replacing
 // each nucleotide with its complement:
-
+//
+// nucleotide info as follows
 // * `G` -> `C`
 // * `C` -> `G`
 // * `T` -> `A`
