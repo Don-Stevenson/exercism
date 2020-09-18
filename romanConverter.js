@@ -1,4 +1,5 @@
 // object with key value pairs for roman numerals and their equivalent arabic number
+// *********************************************************************************
 
 const romanNums = {
     M: 1000,
@@ -17,6 +18,7 @@ const romanNums = {
   }
 
   // function that returns a roman numeral given an arabic number
+  // ************************************************************
   
   export const toRoman = (num) => {
     let romanNum = "";
