@@ -2,9 +2,10 @@
 // *******************************************
 
 const between = (x) => {
-    if (1 <= x <= 8 ) return "between 1 and 8" 
-    else if (9 < x <=20) return "between 9 and 20"
+    if (x >= 1 && x < 8 ) return "between 1 and 8" 
+    else if (x >= 8 && x < 20) return "between 8 and 20"
     else return "not between"
 }
 
+console.log(between(1))
 console.log(between(11))
