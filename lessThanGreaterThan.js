@@ -1,5 +1,6 @@
 const between = (x) =>{
-    return x;
+    if (8>= x >=1) return "between"
+    else return "not between"
 }
 
-console.log(between(7))
+console.log(between(6))
