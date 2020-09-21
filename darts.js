@@ -20,9 +20,9 @@
 // Write a function that given a point in the target (defined by its `real` cartesian coordinates `x` and `y`), 
 // returns the correct amount earned by a dart landing in that point.
 export const score = (x, y) => {
-    const dartLocationRadius = Math.sqrt( Math.pow((x), 2) + Math.pow((y), 2))
-    if (dartLocationRadius > 10) return 0
-    if (dartLocationRadius > 5 && dartLocationRadius <= 10) return 1
-    if (dartLocationRadius > 1 && dartLocationRadius <= 5) return 5
-    else return 10
-  };
+  const dartLocationRadius = Math.sqrt( Math.pow((x), 2) + Math.pow((y), 2))
+  if (dartLocationRadius > 10) return 0
+  if (dartLocationRadius > 5 && dartLocationRadius <= 10) return 1
+  if (dartLocationRadius > 1 && dartLocationRadius <= 5) return 5
+  return 10
+};
