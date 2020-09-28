@@ -32,6 +32,4 @@ const plantAges = {
  
 
 
-const space = (planets,ageSecs) => {
-    return planets, ageSecs
-}
+ const age = (planet, ageInSeconds) => parseFloat((ageInSeconds / (earthYearInSecs * plantAges[planet])).toFixed(2))
