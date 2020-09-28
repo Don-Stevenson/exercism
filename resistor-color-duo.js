@@ -41,6 +41,8 @@ const COLORS = [
   
   export const decodedValue = ([color1, color2]) => (COLORS.indexOf(color1) * 10) + COLORS.indexOf(color2);
   
+  // working solution with out destructored colours
+  // **********************************************
   // export const decodedValue = (resistorColors) =>  parseInt(`${COLORS.indexOf(resistorColors[0])}${COLORS.indexOf(resistorColors[1])}`)
   
 
