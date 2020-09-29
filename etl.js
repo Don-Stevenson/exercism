@@ -34,4 +34,3 @@
 export const transform = (letters) => {
  console.log(letters)
 };
-  
