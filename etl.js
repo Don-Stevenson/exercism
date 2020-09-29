@@ -32,5 +32,5 @@
 // - Etc.
 
 export const transform = (letters) => {
- console.log(letters)
+ console.log("letters are", letters)
 };
