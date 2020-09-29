@@ -32,9 +32,8 @@
 // - Etc.
 
 export const transform = (letters) => {
-    letters.map(
+   return letters.map(
       x => console.log(x)
     )
-   console.log(letters)
-  };
+};
   
