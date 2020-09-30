@@ -31,6 +31,13 @@
 // - "d" is worth 2 points.
 // - Etc.
 
-export const transform = (letters) => {
- console.log("letters are", letters)
-};
+const transform = (letters) => {
+    let transformedData = {}
+     for (const key in letters) {
+      for (const values of letters[key]) {
+        transformedData[values.toLowerCase()] = parseInt(key)
+        }
+     }
+     return transformedData
+ };
+   
