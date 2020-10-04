@@ -30,6 +30,10 @@
 // 9. 1
 
 // Resulting in 9 steps. So for input n = 12, the return value would be 9.
+// ***********************************************************************
+
+// 1st working solution
+// ********************
 
 // export const steps = n => {
 //   if (n <= 0) throw new Error("Only positive numbers are allowed");
@@ -47,6 +51,7 @@
 //   }
 //   return count;
 // };
+// ***************************************
 
 export const steps = (n, count = 0) => {
     if (n <= 0) throw new Error("Only positive numbers are allowed");
