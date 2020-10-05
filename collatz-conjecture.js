@@ -53,7 +53,7 @@
 // };
 // ***************************************
 
-export const steps = (n, count = 0) => {
+const steps = (n, count = 0) => {
     if (n <= 0) throw new Error("Only positive numbers are allowed");
     if (n === 1) return count;
     return steps(n % 2 === 0
