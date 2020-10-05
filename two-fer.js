@@ -33,4 +33,4 @@
 // |Zaphod  |One for Zaphod, one for me.
 
 
-export const twoFer = (name = "you") => `One for ${name}, one for me.`
+const twoFer = (name = "you") => `One for ${name}, one for me.`
