@@ -10,7 +10,7 @@
 
 // Write some code to determine whether a number is an Armstrong number.
 
-export const isArmstrongNumber = num => {
+const isArmstrongNumber = num => {
     const numArr = num.toString().split("")
     const exponent = numArr.length;
      return (
