@@ -16,4 +16,4 @@
 const MILLI = 1000;
 const BILLION = 1e9;
 
-export const gigasecond = moment => new Date(moment.getTime() + (MILLI * BILLION));
+const gigasecond = moment => new Date(moment.getTime() + (MILLI * BILLION));
