@@ -24,7 +24,7 @@
 //
 //
 
-export const compute = (leftStrand, rightStrand) => {
+const compute = (leftStrand, rightStrand) => {
     if (leftStrand.length === 0 && rightStrand.length === 0) return 0
     if (leftStrand.length === 0) throw new Error('left strand must not be empty')
     if (rightStrand.length === 0) throw new Error('right strand must not be empty')
