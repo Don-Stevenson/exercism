@@ -26,7 +26,7 @@
 // More information on the color encoding of resistors can be found in the [Electronic color code Wikipedia article](https://en.wikipedia.org/wiki/Electronic_color_code)
 //
 
-export const colorCode = colour => {
+const colorCode = colour => {
 
     // return COLORS.findIndex(colorCode(colour))
   
@@ -46,7 +46,7 @@ export const colorCode = colour => {
     return colourObj[colour];
   };
   
-  export const COLORS = [
+  const COLORS = [
     "black",
     "brown",
     "red",
