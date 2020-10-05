@@ -20,7 +20,7 @@ const romanNums = {
   // function that returns a roman numeral given an arabic number
   // ************************************************************
   
-  export const toRoman = (num) => {
+  const toRoman = (num) => {
     let romanNum = "";
     for (let index in romanNums) {
        while (num >= romanNums[index]) {
