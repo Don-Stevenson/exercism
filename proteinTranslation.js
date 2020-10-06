@@ -68,6 +68,13 @@ const codonToAA = {
   
   
   export const translate = (rna) => {
-  console.log(rna)
+    if (!rna) return []
+    const codonsArr = rna.match(/.{1,3}/g)
+    let aminoAcidArr = []
+    codonsArr.forEach(element => {
+      if (element === "UAA" || element === "UAG"|| element === "UGA") console.log("Hi there")
+      else aminoAcidArr.push(codonToAA[element])
+    });
+    return aminoAcidArr
   };
   
