@@ -67,15 +67,15 @@ const codonToAA = {
   
   
   
-  export const translate = (rna) => {
-    if (!rna) return [];
-    let aminoAcidArr = [];
-    const codonArr = rna.match(/.{1,3}/g);
-    for (const codon of codonArr ) {
-      if (codon === "UAA" || codon === "UAG"|| codon === "UGA") return aminoAcidArr;
-      if (codonToAA[codon] === undefined) throw new Error('Invalid codon');
-      else aminoAcidArr.push(codonToAA[codon]);
-    }
-    return aminoAcidArr
-  };
+const translate = (rna) => {
+  if (!rna) return [];
+  let aminoAcidArr = [];
+  const codonArr = rna.match(/.{1,3}/g);
+  for (const codon of codonArr ) {
+    if (codon === "UAA" || codon === "UAG"|| codon === "UGA") return aminoAcidArr;
+    if (codonToAA[codon] === undefined) throw new Error('Invalid codon');
+    else aminoAcidArr.push(codonToAA[codon]);
+  }
+  return aminoAcidArr;
+};
   
