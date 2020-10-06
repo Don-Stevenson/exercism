@@ -68,17 +68,14 @@ const codonToAA = {
   
   
   export const translate = (rna) => {
-    if (!rna) return []
-    const codonsArr = rna.match(/.{1,3}/g)
-    let aminoAcidArr = []
-
-    for (const codons of codonsArr) {
-        console.log(codons)
+    if (!rna) return [];
+    let aminoAcidArr = [];
+    const codonArr = rna.match(/.{1,3}/g);
+    for (const codon of codonArr ) {
+      if (codon === "UAA" || codon === "UAG"|| codon === "UGA") return aminoAcidArr;
+      if (codonToAA[codon] === undefined) throw new Error('Invalid codon');
+      else aminoAcidArr.push(codonToAA[codon]);
     }
-    // codonsArr.forEach(element => {
-    //   if (element === "UAA" || element === "UAG"|| element === "UGA") console.log("Hi there")
-    //   else aminoAcidArr.push(codonToAA[element])
-    // });
     return aminoAcidArr
   };
   
