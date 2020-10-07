@@ -44,6 +44,8 @@
 // UGG                   | Tryptophan
 // UAA, UAG, UGA         | STOP
 
+// condon to Amino acid key object
+// *******************************
 const codonToAA = {
   AUG:"Methionine",
   UUU: "Phenylalanine",
@@ -63,6 +65,9 @@ const codonToAA = {
   UAG: "Stop",
   UGA: "Stop"
 }
+
+// working solution
+// ****************
 
 const translate = (rna) => {
   if (!rna) return [];
