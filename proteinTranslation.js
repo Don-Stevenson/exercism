@@ -2,7 +2,7 @@
 
 // Translate RNA sequences into proteins.
 
-// RNA can be broken into three nucleotide sequences called codons, 
+// RNA can be broken into three nucleotide sequences called codons,
 // and then translated to a polypeptide like so:
 
 // RNA: `"AUGUUUUCU"` => translates to
@@ -12,13 +12,13 @@
 
 // Protein: `"Methionine", "Phenylalanine", "Serine"`
 
-// There are 64 codons which in turn correspond to 20 amino acids; 
-// however, all of the codon sequences and resulting amino acids are not important in this exercise. 
+// There are 64 codons which in turn correspond to 20 amino acids;
+// however, all of the codon sequences and resulting amino acids are not important in this exercise.
 //  If it works for one codon, the program should work for all of them.
 // However, feel free to expand the list in the test suite to include them all.
 
-// There are also three terminating codons (also known as 'STOP' codons); 
-// if any of these codons are encountered (by the ribosome), all translation ends 
+// There are also three terminating codons (also known as 'STOP' codons);
+// if any of these codons are encountered (by the ribosome), all translation ends
 // and the protein is terminated.
 
 // All subsequent codons after are ignored, like this:
@@ -47,7 +47,7 @@
 // condon to Amino acid key object
 // *******************************
 const codonToAA = {
-  AUG:"Methionine",
+  AUG: "Methionine",
   UUU: "Phenylalanine",
   UUC: "Phenylalanine",
   UUA: "Leucine",
@@ -63,8 +63,8 @@ const codonToAA = {
   UGG: "Tryptophan",
   UAA: "Stop",
   UAG: "Stop",
-  UGA: "Stop"
-}
+  UGA: "Stop",
+};
 
 // working solution
 // ****************
@@ -75,7 +75,7 @@ const translate = (rna) => {
   const codonArr = rna.match(/.{1,3}/g);
   for (const codon of codonArr) {
     if (codonToAA[codon] === "Stop") return aminoAcidArr;
-    else if (codonToAA[codon] === undefined) throw new Error('Invalid codon');
+    else if (codonToAA[codon] === undefined) throw new Error("Invalid codon");
     else aminoAcidArr.push(codonToAA[codon]);
   }
   return aminoAcidArr;
