@@ -45,37 +45,33 @@
 // UAA, UAG, UGA         | STOP
 
 const codonToAA = {
-    AUG:"Methionine",
-    UUU: "Phenylalanine",
-    UUC: "Phenylalanine",
-    UUA: "Leucine",
-    UUG: "Leucine",
-    UCU: "Serine",
-    UCC: "Serine",
-    UCA: "Serine",
-    UCG: "Serine",
-    UAU: "Tyrosine",
-    UAC: "Tyrosine",
-    UGU: "Cysteine",
-    UGC: "Cysteine",
-    UGG: "Tryptophan",
-  }
-  
-  // UGU, UGC              | Cysteine
-  // UGG                   | Tryptophan
-  // UAA, UAG, UGA         | STOP
-  
-  
-  
+  AUG:"Methionine",
+  UUU: "Phenylalanine",
+  UUC: "Phenylalanine",
+  UUA: "Leucine",
+  UUG: "Leucine",
+  UCU: "Serine",
+  UCC: "Serine",
+  UCA: "Serine",
+  UCG: "Serine",
+  UAU: "Tyrosine",
+  UAC: "Tyrosine",
+  UGU: "Cysteine",
+  UGC: "Cysteine",
+  UGG: "Tryptophan",
+  UAA: "Stop",
+  UAG: "Stop",
+  UGA: "Stop"
+}
+
 const translate = (rna) => {
   if (!rna) return [];
   let aminoAcidArr = [];
   const codonArr = rna.match(/.{1,3}/g);
-  for (const codon of codonArr ) {
-    if (codon === "UAA" || codon === "UAG"|| codon === "UGA") return aminoAcidArr;
-    if (codonToAA[codon] === undefined) throw new Error('Invalid codon');
+  for (const codon of codonArr) {
+    if (codonToAA[codon] === "Stop") return aminoAcidArr;
+    else if (codonToAA[codon] === undefined) throw new Error('Invalid codon');
     else aminoAcidArr.push(codonToAA[codon]);
   }
   return aminoAcidArr;
 };
-  
