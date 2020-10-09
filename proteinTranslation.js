@@ -67,7 +67,7 @@ const codonToAA = {
 };
 
 // working solution
-// ***************
+// ****************
 
 const translate = (rna) => {
   if (!rna) return [];
