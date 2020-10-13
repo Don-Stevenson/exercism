@@ -1,0 +1,1 @@
+const rainDrops =(num) => {console.log(num)}
