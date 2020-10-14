@@ -1,5 +1,5 @@
 // # Raindrops
-// ************
+// ***********
 // Convert a number to a string, the contents of which depend on the number's factors.
 
 // - If the number has 3 as a factor, output 'Pling'.
@@ -9,7 +9,7 @@
 //   just pass the number's digits straight through.
 
 // ## Examples
-
+// ***********
 // - 28's factors are 1, 2, 4, **7**, 14, 28.
 //   - In raindrop-speak, this would be a simple "Plong".
 // - 30's factors are 1, 2, **3**, **5**, 6, 10, 15, 30.
