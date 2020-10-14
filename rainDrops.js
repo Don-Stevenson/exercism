@@ -24,5 +24,5 @@ const convert = (num) => {
   const plang = num % 5 === 0 ? "Plang" : "";
   const plong = num % 7 === 0 ? "Plong" : "";
 
-  return `${pling}${plang}${plong}` || `${num}`;
+  return pling || plang || plong ? `${pling}${plang}${plong}` : `${num}`;
 };
