@@ -15,7 +15,8 @@
 // - 30's factors are 1, 2, **3**, **5**, 6, 10, 15, 30.
 //   - In raindrop-speak, this would be a "PlingPlang".
 // - 34 has four factors: 1, 2, 17, and 34.
-//   - In raindrop-speak, this would be "34".
+//   - In raindrop-speak, this would be "34"
+// *****************************************************
 
 const convert = (num) => {
   if (num % 3 === 0 && num % 5 === 0 && num % 7 === 0) return "PlingPlangPlong";
