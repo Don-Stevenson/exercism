@@ -22,7 +22,7 @@ const romanNums = {
   
   const toRoman = (num) => {
     let romanNum = "";
-    for (let index in romanNums) {
+    for (const index in romanNums) {
        while (num >= romanNums[index]) {
         romanNum += index;
         num -= romanNums[index];
