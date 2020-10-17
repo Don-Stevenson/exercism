@@ -25,25 +25,27 @@
 // brown-green should return 15
 // brown-green-violet should return 15 too, ignoring the third color.
 
-const COLORS = [
-    "black",
-    "brown",
-    "red",
-    "orange",
-    "yellow",
-    "green",
-    "blue",
-    "violet",
-    "grey",
-    "white"
-  ];
-  
-  
-const decodedValue = ([color1, color2]) => (COLORS.indexOf(color1) * 10) + COLORS.indexOf(color2);
-  
-  // working solution with out destructored colours
-  // **********************************************
-  // const decodedValue = (resistorColors) =>  parseInt(`${COLORS.indexOf(resistorColors[0])}${COLORS.indexOf(resistorColors[1])}`)
-  
+// ******************************************************************
 
-  
+// working solution with out destructored colours
+// **********************************************
+// const decodedValue = (resistorColors) =>  parseInt(`${COLORS.indexOf(resistorColors[0])}${COLORS.indexOf(resistorColors[1])}`)
+
+// ******************************************************************
+// Submitted solution
+
+const COLORS = [
+  "black",
+  "brown",
+  "red",
+  "orange",
+  "yellow",
+  "green",
+  "blue",
+  "violet",
+  "grey",
+  "white",
+];
+
+const decodedValue = ([color1, color2]) =>
+  COLORS.indexOf(color1) * 10 + COLORS.indexOf(color2);
