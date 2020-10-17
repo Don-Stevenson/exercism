@@ -9,5 +9,3 @@ const between = (x) => {
 }
 
 console.log(between(1))
-console.log(between(11))
-console.log(between(19))
