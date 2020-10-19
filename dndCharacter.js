@@ -24,7 +24,11 @@
 // Because constitution is 3, the constitution modifier is -4 and the hitpoints are 6.
 
 export const abilityModifier = (charConstitution) => {
-    return Math.floor((charConstitution - 10) / 2);
+    if (charConstitution < 3)
+    throw new Error("Ability scores must be at least 3");
+  if (charConstitution > 18)
+    throw new Error("Ability scores can be at most 18");
+  return Math.floor((charConstitution - 10) / 2);
   };
   
   export class Character {
