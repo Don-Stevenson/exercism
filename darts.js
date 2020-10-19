@@ -24,7 +24,7 @@
 // coordinates `x` and `y`), 
 // returns the correct amount earned by a dart landing in that point.
 //
-//********************************************************************************************
+//*******************************************************************************************
 
 const score = (x, y) => {
   const dartLocationRadius = Math.sqrt( Math.pow((x), 2) + Math.pow((y), 2))
