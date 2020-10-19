@@ -25,6 +25,9 @@
 // whether a given number is **abundant** or **deficient**.
 
 export const classify = (num) => {
-       console.log(num)
+    if (num <= 0)
+      throw new Error("Classification is only possible for natural numbers.");
+  
+      console.log(num)
   };
   
