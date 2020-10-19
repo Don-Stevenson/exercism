@@ -32,7 +32,7 @@ const aliquotSum = (n) => {
   return sum;
 };
 
-export const classify = (num) => {
+const classify = (num) => {
   if (num <= 0)
     throw new Error("Classification is only possible for natural numbers.");
   if (num === aliquotSum(num)) return "perfect";
