@@ -24,10 +24,20 @@
 // Depending on your language track, you may also need to implement a way to determine 
 // whether a given number is **abundant** or **deficient**.
 
+const aliquotSum = (n) => {
+  let sum = 0;
+  for (let i = 1; i < n; i++) {
+    if (n % i === 0) sum += i;
+  }
+  return sum;
+};
+
 export const classify = (num) => {
-    if (num <= 0)
-      throw new Error("Classification is only possible for natural numbers.");
-    if (num === 6) return "Perfect number"
-      console.log(num)
-  };
+  if (num <= 0)
+    throw new Error("Classification is only possible for natural numbers.");
+  if (num === aliquotSum(num)) return "perfect";
+  if (num > aliquotSum(num)) return "deficient";
+  if (num < aliquotSum(num)) return "abundant";
+};
+
   
