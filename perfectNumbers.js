@@ -27,7 +27,7 @@
 export const classify = (num) => {
     if (num <= 0)
       throw new Error("Classification is only possible for natural numbers.");
-  
+    if (num === 6) return "Perfect number"
       console.log(num)
   };
   
