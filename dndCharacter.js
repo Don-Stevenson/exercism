@@ -24,7 +24,7 @@
 // Because constitution is 3, the constitution modifier is -4 and the hitpoints are 6.
 
 export const abilityModifier = (charConstitution) => {
-    throw new Error("Remove this statement and implement this function");
+    return Math.floor((charConstitution - 10) / 2);
   };
   
   export class Character {
