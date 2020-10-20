@@ -32,8 +32,8 @@ export const abilityModifier = (charConstitution) => {
   };
   
   export class Character {
-    static rollAbility() {
-      throw new Error("Remove this statement and implement this function");
+    static rollAbility(roll) {
+      console.log(roll)
     }
   
     get strength() {
