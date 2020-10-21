@@ -12,11 +12,7 @@
 // ```
 
 export const countWords = (sentence) => {
-  const wordsArr = sentence
-    .toLowerCase()
-    .replace(/[!!&@$%^&:.]+/g, "")
-    .split(/[ ,\n]+/);
-
+  const wordsArr = sentence.toLowerCase().match(/\b\w+('\w+)?/g);
   let result = {};
   for (const word of wordsArr) {
     if (result.hasOwnProperty(word)) {
@@ -25,6 +21,18 @@ export const countWords = (sentence) => {
       result[word] = 1;
     }
   }
-  console.log({ result });
   return result;
 };
+
+// found solution
+// **************
+// export const countWords = (text) => {
+//   console.log(text.toLowerCase()
+//     .match(/\b\w+('\w+)?/g))
+//     .reduce((prev, curr) => {
+//       (curr in prev)
+//         ? prev[curr] += 1
+//         : prev[curr] = 1;
+//       return prev;
+//     }, {});
+// };
