@@ -12,7 +12,21 @@
 // ```
 
 
-export const countWords = () => {
-    throw new Error("Remove this statement and implement this function");
-  };
-  
+export const countWords = (sentence) => {
+  const wordsArr = sentence
+    .toLowerCase()
+    .replace(/[!!&@$%^&:.]+/g, "")
+    .split(/[ ,\n]+/);
+
+  // console.log("words arr:", wordsArr);
+  let result = {};
+  for (const word of wordsArr) {
+    if (result.hasOwnProperty(word)) {
+      result[word] = result[word] += 1;
+    } else {
+      result[word] = 1;
+    }
+  }
+  console.log({ result });
+  return result;
+};
