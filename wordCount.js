@@ -11,14 +11,12 @@
 // free: 1
 // ```
 
-
 export const countWords = (sentence) => {
   const wordsArr = sentence
     .toLowerCase()
     .replace(/[!!&@$%^&:.]+/g, "")
     .split(/[ ,\n]+/);
 
-  // console.log("words arr:", wordsArr);
   let result = {};
   for (const word of wordsArr) {
     if (result.hasOwnProperty(word)) {
