@@ -17,9 +17,7 @@ export const countWords = (sentence) => {
   for (const word of wordsArr) {
     if (result.hasOwnProperty(word)) {
       result[word] = result[word] += 1;
-    } else {
-      result[word] = 1;
-    }
+    } else result[word] = 1;
   }
   return result;
 };
