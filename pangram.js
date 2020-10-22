@@ -2,13 +2,11 @@
 //   "every letter") is a sentence using every letter of the alphabet at least once.
 //   The best known English pangram is:
 //   > The quick brown fox jumps over the lazy dog.
-  
+
 //   The alphabet used consists of ASCII letters `a` to `z`, inclusive, and is case
 //   insensitive. Input will not contain non-ASCII symbols.
 
 export const isPangram = (text) => {
-    console.log(text)
-    if (!text) return false
-    console.log(text.match(/\b\w+('\w+)?/g))
-  };
-  
+  if (!text) return false;
+  console.log(text.match(/\b\w+('\w+)?/g));
+};
