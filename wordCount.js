@@ -11,7 +11,7 @@
 // free: 1
 // ```
 
-export const countWords = (sentence) => {
+const countWords = (sentence) => {
   const wordsArr = sentence.toLowerCase().match(/\b\w+('\w+)?/g);
   let result = {};
   for (const word of wordsArr) {
@@ -24,13 +24,15 @@ export const countWords = (sentence) => {
 
 // found solution
 // **************
-// export const countWords = (text) => {
-//   console.log(text.toLowerCase()
-//     .match(/\b\w+('\w+)?/g))
-//     .reduce((prev, curr) => {
-//       (curr in prev)
-//         ? prev[curr] += 1
-//         : prev[curr] = 1;
-//       return prev;
-//     }, {});
-// };
+const count = (text) => {
+  text
+    .toLowerCase()
+    .match(/\b\w+('\w+)?/g)
+    .reduce((prev, curr) => {
+      console.log({prev}, {curr})
+      curr in prev ? (prev[curr] += 1) : (prev[curr] = 1);
+      return prev;
+    }, {});
+};
+
+console.log(count("the best things in the life are free!!!"))
