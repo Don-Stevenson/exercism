@@ -8,5 +8,7 @@
 
 export const isPangram = (text) => {
   if (!text) return false;
-  console.log(text.match(/\b\w+('\w+)?/g));
+  if (/^[a-zA-Z]+$/.test(text)) return true;
+  else return false
 };
+
