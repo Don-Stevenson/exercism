@@ -35,4 +35,4 @@ const count = (text) => {
     }, {});
 };
 
-console.log(count("the best things are free!!!"))
+console.log(count("Testing 1 2 3!!"))
