@@ -25,8 +25,6 @@
 
 // More information on the color encoding of resistors can be found in the 
 // [Electronic color code Wikipedia article](https://en.wikipedia.org/wiki/Electronic_color_code)
-//
-
 //***********************************************************************************************
 
 const colorCode = colour => {
