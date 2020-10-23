@@ -29,11 +29,15 @@
 
 // working solution with out destructored colours
 // **********************************************
-// const decodedValue = (resistorColors) =>  parseInt(`${COLORS.indexOf(resistorColors[0])}${COLORS.indexOf(resistorColors[1])}`)
+// const decodedValue = (resistorColors) =>
+//   parseInt(
+//     `${COLORS.indexOf(resistorColors[0])}${COLORS.indexOf(resistorColors[1])}`
+//   );
 
 // ******************************************************************
-// Submitted solution
 
+// Submitted solution
+//*******************
 const COLORS = [
   "black",
   "brown",
