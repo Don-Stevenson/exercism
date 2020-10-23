@@ -7,7 +7,7 @@
 //  insensitive. Input will not contain non-ASCII symbols.
 //  *********************************************************************************
 
-export const isPangram = (text) => {
+const isPangram = (text) => {
   if (/^[a-zA-Z]+$/.test(text)) return true;
   else return false
 };
