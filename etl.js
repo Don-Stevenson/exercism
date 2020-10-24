@@ -30,7 +30,7 @@
 // - "c" is worth 3 points.
 // - "d" is worth 2 points.
 // - Etc.
-// *************************
+// ************************
 
 const transform = (letters) => {
     let transformedData = {}
