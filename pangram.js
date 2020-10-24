@@ -8,6 +8,7 @@
 //  *******************************************************************************
 
 const isPangram = (text) => {
+  console.log(text)
   if (/^[a-zA-Z]+$/.test(text)) return true;
   else return false
 };
