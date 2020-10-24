@@ -12,7 +12,7 @@
 // mutating function arguments, this is usually undesirable, and in the case of this exercise,
 // clearly unexpected. For this reason, the test suite has a test that fails in  
 // case the argument has been modified after the function execution.
-// *******************************************************************************************
+// ******************************************************************************************
 
 const MILLI = 1000;
 const BILLION = 1e9;
