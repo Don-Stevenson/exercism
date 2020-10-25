@@ -5,7 +5,7 @@
 
 //  The alphabet used consists of ASCII letters `a` to `z`, inclusive, and is case
 //  insensitive. Input will not contain non-ASCII symbols.
-//  ******************************************************************************
+//  *******************************************************************************
 
 const isPangram = (text) => {
   console.log(text)
