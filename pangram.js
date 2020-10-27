@@ -8,8 +8,14 @@
 //  ******************************************************************************
 
 const isPangram = (text) => {
-  console.log(text)
-  if (/^[a-zA-Z]+$/.test(text)) return true;
-  else return false
+  let alphabet = 'abcdefghijklmnopqrstuvwxyz'.split('');
+  let pangram = [];
+
+  for (let char of text.toLowerCase()) {
+    if (alphabet.includes(char) && !pangram.includes(char)) {
+      pangram.push(char);
+    }
+  }
+  return pangram.sort().toString() === alphabet.toString();
 };
 
