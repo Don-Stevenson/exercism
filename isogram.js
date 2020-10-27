@@ -14,6 +14,6 @@
 // The word *isograms*, however, is not an isogram, because the s repeats.
 
 export const isIsogram = (word) => {
-    if (!word) return true;
+    if (!word) return true
   };
   
