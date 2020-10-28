@@ -29,10 +29,5 @@ export const isIsogram = (word) => {
 
   const lowerCased = word.toLowerCase();
 
-  const result = word
-    .toLowerCase()
-    .split("")
-    .every((v, i) => lowerCased.indexOf(v) === i);
-
-  return result;
+  return (result = word.split("").every((v, i) => lowerCased.indexOf(v) === i));
 };
