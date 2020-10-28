@@ -34,8 +34,6 @@
 //     `${COLORS.indexOf(resistorColors[0])}${COLORS.indexOf(resistorColors[1])}`
 //   );
 
-// ******************************************************************
-
 // Submitted solution
 //********************
 const COLORS = [
