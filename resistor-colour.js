@@ -23,38 +23,35 @@
 // Mnemonics map the colors to the numbers, that, when stored as an array,
 // happen to map to their index in the array: Better Be Right Or Your Great Big Values Go Wrong.
 
-// More information on the color encoding of resistors can be found in the 
+// More information on the color encoding of resistors can be found in the
 // [Electronic color code Wikipedia article](https://en.wikipedia.org/wiki/Electronic_color_code)
 //************************************************************************************************
 
-const colorCode = colour => {
-
-    
-    const colourObj = {
-      black: 0,
-      brown: 1,
-      red: 2,
-      orange: 3,
-      yellow: 4,
-      green: 5,
-      blue: 6,
-      violet: 7,
-      grey: 8,
-      white: 9
-    };
-  
-    return colourObj[colour];
+const colorCode = (colour) => {
+  const colourObj = {
+    black: 0,
+    brown: 1,
+    red: 2,
+    orange: 3,
+    yellow: 4,
+    green: 5,
+    blue: 6,
+    violet: 7,
+    grey: 8,
+    white: 9,
   };
-  
-  const COLORS = [
-    "black",
-    "brown",
-    "red",
-    "orange",
-    "yellow",
-    "green",
-    "blue",
-    "violet",
-    "grey",
-    "white"
-  ];
+  return colourObj[colour];
+};
+
+const COLORS = [
+  "black",
+  "brown",
+  "red",
+  "orange",
+  "yellow",
+  "green",
+  "blue",
+  "violet",
+  "grey",
+  "white",
+];
