@@ -20,10 +20,10 @@
 //   - 8 is a deficient number because (1 + 2 + 4) = 7
 //   - Prime numbers are deficient
 
-// Implement a way to determine whether a given number is **perfect**. 
-// Depending on your language track, you may also need to implement a way to determine 
+// Implement a way to determine whether a given number is **perfect**.
+// Depending on your language track, you may also need to implement a way to determine
 // whether a given number is **abundant** or **deficient**.
-//************************************************************************************
+//*************************************************************************************
 
 const aliquotSum = (n) => {
   let sum = 0;
@@ -40,5 +40,3 @@ const classify = (num) => {
   if (num > aliquotSum(num)) return "deficient";
   if (num < aliquotSum(num)) return "abundant";
 };
-
-  
