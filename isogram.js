@@ -28,6 +28,5 @@ export const isIsogram = (word) => {
   // return letterObj.hasOwnProperty(2) ? false : true;
 
   const lowerCased = word.toLowerCase();
-
   return (result = word.split("").every((v, i) => lowerCased.indexOf(v) === i));
 };
