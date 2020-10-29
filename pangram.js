@@ -5,10 +5,10 @@
 
 //  The alphabet used consists of ASCII letters `a` to `z`, inclusive, and is case
 //  insensitive. Input will not contain non-ASCII symbols.
-//  *******************************************************************************
+//  ******************************************************************************
 
 const isPangram = (text) => {
-  let alphabet = 'abcdefghijklmnopqrstuvwxyz'.split('');
+  let alphabet = "abcdefghijklmnopqrstuvwxyz".split("");
   let pangram = [];
 
   for (let char of text.toLowerCase()) {
@@ -18,4 +18,3 @@ const isPangram = (text) => {
   }
   return pangram.sort().toString() === alphabet.toString();
 };
-
