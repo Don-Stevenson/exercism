@@ -45,7 +45,7 @@
 // UAA, UAG, UGA         | STOP
 
 // condon to Amino acid key object
-// *********************************
+// *******************************
 const codonToAA = {
   AUG: "Methionine",
   UUU: "Phenylalanine",
