@@ -14,19 +14,15 @@
 // The word *isograms*, however, is not an isogram, because the s repeats.
 //************************************************************************
 
-export const isIsogram = (word) => {
-  // const input = word.split("");
-  // console.log({ input });
-  // let letterObj = {};
-  // for (const letter of input) {
-  //   console.log(letter);
-  //   if (letterObj.hasOwnProperty(letter)) {
-  //     letterObj[letter] = letterObj += 1;
-  //     console.log("here");
-  //   } else letterObj[letter] = 1;
-  // }
-  // return letterObj.hasOwnProperty(2) ? false : true;
-
-  const lowerCased = word.toLowerCase();
-  return (result = word.split("").every((v, i) => lowerCased.indexOf(v) === i));
+const isIsogram = (word) => {
+  if (!word) return true;
+  else {
+    const lowerCaseCleaned = word
+      .toLowerCase()
+      .match(/\b\w+('\w+)?/g)
+      .join("");
+    return lowerCaseCleaned
+      .split("")
+      .every((value, index) => lowerCaseCleaned.indexOf(value) === index);
+  }
 };
