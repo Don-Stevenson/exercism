@@ -35,7 +35,7 @@
 //   );
 
 // Submitted solution
-//********************
+//*******************
 const COLORS = [
   "black",
   "brown",
