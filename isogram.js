@@ -11,8 +11,8 @@
 // - downstream
 // - six-year-old
 
-// The word *isograms*, however, is not an isogram, because the s repeats.
-//************************************************************************
+// The word *isograms*, however, is not an isogram, because the s repeats
+//***********************************************************************
 
 const isIsogram = (word) => {
   if (!word) return true;
