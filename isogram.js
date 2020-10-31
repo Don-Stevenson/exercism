@@ -21,10 +21,10 @@ const isIsogram = (word) => {
       .toLowerCase()
       .match(/\b\w+('\w+)?/g)
       .join("");
-    return lowerCaseCleaned.split("").every((value, index) => {
-      console.log(value, index), lowerCaseCleaned.indexOf(value) === index;
+   return lowerCaseCleaned.split("").every((value, index) => {
+      lowerCaseCleaned.indexOf(value) === index;
     });
   }
 };
 
-isIsogram("hello")
+console.log(isIsogram("background"));
