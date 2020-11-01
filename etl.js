@@ -33,12 +33,11 @@
 // *************************
 
 const transform = (letters) => {
-    let transformedData = {}
-     for (const key in letters) {
-      for (const values of letters[key]) {
-        transformedData[values.toLowerCase()] = parseInt(key)
-        }
-     }
-     return transformedData
- };
-   
+  let transformedData = {};
+  for (const key in letters) {
+    for (const values of letters[key]) {
+      transformedData[values.toLowerCase()] = parseInt(key);
+    }
+  }
+  return transformedData;
+};
