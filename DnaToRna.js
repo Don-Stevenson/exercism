@@ -18,19 +18,19 @@
 // * `C` -> `G`
 // * `T` -> `A`
 // * `A` -> `U`
-// 
+//
 //**********************************************************************
 
 const DnaToRna = {
-    G: "C",
-    C: "G",
-    T: "A",
-    A: "U"
-  };
-  
-const toRna = DNA =>
-    DNA.split("")
-      .map(nucleotide => DnaToRna[nucleotide])
-      .join("");
+  G: "C",
+  C: "G",
+  T: "A",
+  A: "U",
+};
 
-console.log(toRna("CGTA"))
+const toRna = (DNA) =>
+  DNA.split("")
+    .map((nucleotide) => DnaToRna[nucleotide])
+    .join("");
+
+console.log(toRna("CGTA"));
