@@ -50,3 +50,4 @@ const COLORS = [
 
 const decodedValue = ([color1, color2]) =>
   COLORS.indexOf(color1) * 10 + COLORS.indexOf(color2);
+  
