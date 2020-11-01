@@ -21,7 +21,7 @@ const isIsogram = (word) => {
       .toLowerCase()
       .match(/\b\w+('\w+)?/g)
       .join("");
-   return lowerCaseCleaned.split("").every((value, index) => {
+    return lowerCaseCleaned.split("").every((value, index) => {
       lowerCaseCleaned.indexOf(value) === index;
     });
   }
