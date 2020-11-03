@@ -19,18 +19,26 @@
 
 export class Squares {
   constructor(num) {
-   this.num = num;
+    this.num = num;
   }
 
   get sumOfSquares() {
-     console.log({num});
+    let sumOfSq = 0;
+    for (let i = 1; i <= this.num; i++) {
+      sumOfSq += Math.pow(i, 2);
+    }
+    return sumOfSq;
   }
 
   get squareOfSum() {
- console.log("num =>", this.num)
+    let sum = 0;
+    for (let i = 1; i <= this.num; i++) {
+      sum += i;
+    }
+    return Math.pow(sum, 2);
   }
 
   get difference() {
-    throw new Error("Remove this statement and implement this function");
+    return this.squareOfSum - this.sumOfSquares;
   }
 }
