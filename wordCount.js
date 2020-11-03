@@ -23,7 +23,7 @@ const countWords = (sentence) => {
 };
 
 // found solution
-// ***************
+// **************
 const count = (text) => {
   text
     .toLowerCase()
