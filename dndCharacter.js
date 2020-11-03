@@ -21,8 +21,8 @@
 // * 3, 5, 3, 4: You discard the 3 and sum 5 + 3 + 4 = 12, which you assign to wisdom.
 // * 6, 6, 6, 6: You discard the 6 and sum 6 + 6 + 6 = 18, which you assign to charisma.
 
-// Because constitution is 3, the constitution modifier is -4 and the hitpoints are 6.
-// ***********************************************************************************
+// Because constitution is 3, the constitution modifier is -4 and the hitpoints are 6
+// **********************************************************************************
 
 export const abilityModifier = (charConstitution) => {
   if (charConstitution < 3)
