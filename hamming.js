@@ -21,7 +21,7 @@
 
 // The Hamming Distance is useful for lots of things in science, not just biology,
 //so it's a nice phrase to be familiar with :)
-//********************************************************************************
+//*********************************************************************************
 
 const compute = (leftStrand, rightStrand) => {
   if (leftStrand.length === 0 && rightStrand.length === 0) return 0;
