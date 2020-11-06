@@ -34,6 +34,6 @@
 //**************************************
 
 // solution with providing name variable a default value if nothing else is provided
-// *********************************************************************************
+// **********************************************************************************
 
 const twoFer = (name = "you") => `One for ${name}, one for me.`
