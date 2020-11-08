@@ -16,7 +16,6 @@
 export class NucleotideCounts {
     static parse(strand) {
       if (!strand) return "0 0 0 0"
-      else return "0 0 1 0"
      console.log({strand})
     }
   }
