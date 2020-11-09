@@ -15,12 +15,13 @@
 
 export class NucleotideCounts {
   static parse(strand) {
-    if (strand.match(/[^ACTG]/)) throw new Error("Invalid nucleotide in strand");
+    if (strand.match(/[^ACTG]/))
+      throw new Error("Invalid nucleotide in strand");
     let nucleotideObj = { A: 0, C: 0, G: 0, T: 0 };
-    const nucleotideArr = strand.split("")
-    for (const nucleotide of nucleotideArr) {
-        nucleotideObj[nucleotide] += 1;
+    for (const nucleotide of strand) {
+      nucleotideObj[nucleotide] += 1;
     }
     return Object.values(nucleotideObj).join(" ");
   }
 }
+
