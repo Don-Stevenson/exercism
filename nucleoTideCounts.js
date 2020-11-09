@@ -13,7 +13,6 @@
 // - words are to sentences as...
 // ******************************
 
-
 export class NucleotideCounts {
   static parse(strand) {
     let nucleotideObj = { A: 0, C: 0, G: 0, T: 0 };
@@ -21,10 +20,30 @@ export class NucleotideCounts {
     const strandOf = strand.split("");
     for (const nucleotide of strandOf) {
       console.log("nucleo ", nucleotide);
+      if (
+        nucleotide !== "A" &&
+        nucleotide !== "C" &&
+        nucleotide !== "G" &&
+        nucleotide !== "T"
+      )
+        throw new Error("Invalid nucleotide in strand");
+   
+      if (nucleotide === "A") {
+        nucleotideObj[nucleotide] += 1;
+        console.log("Here", nucleotideObj[nucleotide]);
+      }
+      if (nucleotide === "C") {
+        nucleotideObj[nucleotide] += 1;
+        console.log("Here", nucleotideObj[nucleotide]);
+      }
       if (nucleotide === "G") {
         nucleotideObj[nucleotide] += 1;
         console.log("Here", nucleotideObj[nucleotide]);
-      } else nucleotideObj[nucleotide] += 0;
+      }
+      if (nucleotide === "T") {
+        nucleotideObj[nucleotide] += 1;
+        console.log("Here", nucleotideObj[nucleotide]);
+      }
     }
     console.log({ nucleotideObj });
     return Object.values(nucleotideObj).join(" ").toString();
