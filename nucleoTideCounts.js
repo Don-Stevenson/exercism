@@ -15,9 +15,18 @@
 
 
 export class NucleotideCounts {
-    static parse(strand) {
-      if (!strand) return "0 0 0 0"
-     console.log({strand})
+  static parse(strand) {
+    let nucleotideObj = { A: 0, C: 0, G: 0, T: 0 };
+    if (!strand) return "0 0 0 0";
+    const strandOf = strand.split("");
+    for (const nucleotide of strandOf) {
+      console.log("nucleo ", nucleotide);
+      if (nucleotide === "G") {
+        nucleotideObj[nucleotide] += 1;
+        console.log("Here", nucleotideObj[nucleotide]);
+      } else nucleotideObj[nucleotide] += 0;
     }
+    console.log({ nucleotideObj });
+    return Object.values(nucleotideObj).join(" ").toString();
   }
-  
+}
