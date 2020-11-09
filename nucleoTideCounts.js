@@ -27,6 +27,6 @@ export class NucleotideCounts {
         throw new Error("Invalid nucleotide in strand");
       else nucleotideObj[nucleotide] += 1;
     }
-    return Object.values(nucleotideObj).join(" ").toString();
+    return Object.values(nucleotideObj).join(" ");
   }
 }
