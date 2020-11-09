@@ -19,7 +19,6 @@ export class NucleotideCounts {
     if (!strand) return "0 0 0 0";
     const strandOf = strand.split("");
     for (const nucleotide of strandOf) {
-      console.log("nucleo ", nucleotide);
       if (
         nucleotide !== "A" &&
         nucleotide !== "C" &&
@@ -27,25 +26,20 @@ export class NucleotideCounts {
         nucleotide !== "T"
       )
         throw new Error("Invalid nucleotide in strand");
-   
+
       if (nucleotide === "A") {
         nucleotideObj[nucleotide] += 1;
-        console.log("Here", nucleotideObj[nucleotide]);
       }
       if (nucleotide === "C") {
         nucleotideObj[nucleotide] += 1;
-        console.log("Here", nucleotideObj[nucleotide]);
       }
       if (nucleotide === "G") {
         nucleotideObj[nucleotide] += 1;
-        console.log("Here", nucleotideObj[nucleotide]);
       }
       if (nucleotide === "T") {
         nucleotideObj[nucleotide] += 1;
-        console.log("Here", nucleotideObj[nucleotide]);
       }
     }
-    console.log({ nucleotideObj });
     return Object.values(nucleotideObj).join(" ").toString();
   }
 }
