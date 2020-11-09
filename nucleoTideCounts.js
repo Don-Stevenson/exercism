@@ -26,7 +26,6 @@ export class NucleotideCounts {
         nucleotide !== "T"
       )
         throw new Error("Invalid nucleotide in strand");
-
       if (nucleotide === "A") {
         nucleotideObj[nucleotide] += 1;
       }
