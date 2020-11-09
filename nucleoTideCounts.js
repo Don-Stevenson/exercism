@@ -26,18 +26,7 @@ export class NucleotideCounts {
         nucleotide !== "T"
       )
         throw new Error("Invalid nucleotide in strand");
-      if (nucleotide === "A") {
-        nucleotideObj[nucleotide] += 1;
-      }
-      if (nucleotide === "C") {
-        nucleotideObj[nucleotide] += 1;
-      }
-      if (nucleotide === "G") {
-        nucleotideObj[nucleotide] += 1;
-      }
-      if (nucleotide === "T") {
-        nucleotideObj[nucleotide] += 1;
-      }
+      else nucleotideObj[nucleotide] += 1;
     }
     return Object.values(nucleotideObj).join(" ").toString();
   }
