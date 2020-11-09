@@ -16,9 +16,8 @@
 export class NucleotideCounts {
   static parse(strand) {
     let nucleotideObj = { A: 0, C: 0, G: 0, T: 0 };
-    if (!strand) return "0 0 0 0";
-    const strandOf = strand.split("");
-    for (const nucleotide of strandOf) {
+    const nucleotideArr = strand.split("");
+    for (const nucleotide of nucleotideArr) {
       if (
         nucleotide !== "A" &&
         nucleotide !== "C" &&
