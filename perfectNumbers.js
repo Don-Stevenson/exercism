@@ -21,9 +21,10 @@
 //   - Prime numbers are deficient
 
 // Implement a way to determine whether a given number is **perfect**.
-// Depending on your language track, you may also need to implement a way to determine
-// whether a given number is **abundant** or **deficient**.
-//************************************************************************************
+// Depending on your language track, you may also need
+// to implement a way to determine whether a given 
+// number is **abundant** or **deficient**.
+// *******************************************************************
 
 const aliquotSum = (n) => {
   let sum = 0;
