@@ -2,7 +2,7 @@
 # Raindrops
 # check if a given number is divisable by 3, 5, 7 and return Pling, Plang or Plong
 # if number is not divisable by 3, 5, or 7, return the number
-# ******************************************************************************
+# ********************************************************************************
 
 def convert(number):
     pling = ""
