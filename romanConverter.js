@@ -18,7 +18,7 @@ const romanNums = {
 };
 
 // function that returns a roman numeral given an arabic number
-// *************************************************************
+// ************************************************************
 
 const toRoman = (num) => {
   let romanNum = "";
