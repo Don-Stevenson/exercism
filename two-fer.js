@@ -1,10 +1,3 @@
-//
-// This is only a SKELETON file for the 'Two fer' exercise. It's been provided as a
-// convenience to get you started writing code faster.
-//
-
-
-
 // # Two Fer
 
 // `Two-fer` or `2-fer` is short for two for one. One for you and one for me.
