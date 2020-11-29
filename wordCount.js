@@ -9,7 +9,7 @@
 // come: 1
 // free: 1
 // ```
-// ********************************************************************
+// ***************************************************************
 
 const countWords = (sentence) => {
   const wordsArr = sentence.toLowerCase().match(/\b\w+('\w+)?/g);
@@ -23,7 +23,7 @@ const countWords = (sentence) => {
 };
 
 // found solution
-// ***************
+// **************
 const count = (text) => {
   text
     .toLowerCase()
