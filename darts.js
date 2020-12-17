@@ -1,10 +1,8 @@
 // # Darts
 
 // Write a function that returns the earned points in a single toss of a Darts game.
-
 // [Darts](https://en.wikipedia.org/wiki/Darts) is a game where players
 // throw darts to a [target](https://en.wikipedia.org/wiki/Darts#/media/File:Darts_in_a_dartboard.jpg).
-
 // In our particular instance of the game, the target rewards with 4 different amounts of points,
 // depending on where the dart lands:
 
