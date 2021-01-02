@@ -1,13 +1,8 @@
-//
-// This is only a SKELETON file for the 'Resistor Color Duo' exercise. It's been provided as a
-// convenience to get you started writing code faster.
-//
-//
 // # Resistor Color Duo
+// ********************
 
 // If you want to build something using a Raspberry Pi, you'll probably use _resistors_.
-//For this exercise, you need to know two things about them:
-
+// For this exercise, you need to know two things about them:
 // * Each resistor has a resistance value.
 // * Resistors are small - so small in fact that if you printed the resistance value on them, it would be hard to read.
 
@@ -34,7 +29,7 @@
 //   );
 
 // Submitted solution
-//*******************
+// ******************
 const COLORS = [
   "black",
   "brown",
