@@ -1,6 +1,5 @@
 // # Nucleotide Count
-
-// Given a single stranded DNA string, compute how many times each nucleotide occurs in the string.
+// ******************
 
 // The genetic language of every living thing on the planet is DNA.
 // DNA is a large molecule that is built from an extremely long sequence of individual elements called nucleotides.
@@ -24,4 +23,3 @@ export class NucleotideCounts {
     return Object.values(nucleotideObj).join(" ");
   }
 }
-
