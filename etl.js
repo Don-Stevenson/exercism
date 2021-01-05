@@ -1,15 +1,12 @@
 // # ETL
-
+// ******
 // We are going to do the `Transform` step of an Extract-Transform-Load.
 
 // ### ETL
-
 // Extract-Transform-Load (ETL)
 
 // ### The goal
-
 // We're going to extract some scrabble scores from a legacy system.
-
 // The old system stored a list of letters per score:
 
 // - 1 point: "A", "E", "I", "O", "U", "L", "N", "R", "S", "T",
