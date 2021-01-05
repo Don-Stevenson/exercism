@@ -1,4 +1,4 @@
-// #Armstrong Numbers
+// # Armstrong Numbers
 // ******************
 
 // An [Armstrong number](https://en.wikipedia.org/wiki/Narcissistic_number) is a number that is the sum of its own digits each
@@ -23,3 +23,5 @@ const isArmstrongNumber = (num) => {
     ) === num
   );
 };
+
+console.log(isArmstrongNumber(12))
