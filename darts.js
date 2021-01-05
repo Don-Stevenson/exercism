@@ -1,4 +1,5 @@
 // # Darts
+// *******
 
 // Write a function that returns the earned points in a single toss of a Darts game.
 // [Darts](https://en.wikipedia.org/wiki/Darts) is a game where players
@@ -21,8 +22,7 @@
 // Write a function that given a point in the target (defined by its `real` cartesian
 // coordinates `x` and `y`),
 // returns the correct amount earned by a dart landing in that point.
-//
-//*******************************************************************
+// *****************************************************************
 
 const score = (x, y) => {
   const dartLocationRadius = Math.sqrt(Math.pow(x, 2) + Math.pow(y, 2));
