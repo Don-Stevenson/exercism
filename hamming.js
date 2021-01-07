@@ -1,4 +1,5 @@
 // # Hamming
+// *********
 
 // Calculate the Hamming Distance between two DNA strands.
 
