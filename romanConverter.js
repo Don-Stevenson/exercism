@@ -1,5 +1,5 @@
 // Roman numerals Converter
-//*************************
+// ************************
 
 // object with key value pairs for roman numerals and their equivalent arabic number
 // *********************************************************************************
