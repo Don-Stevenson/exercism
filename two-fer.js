@@ -18,7 +18,7 @@
 // |Bob     |One for Bob, one for me.
 // |        |One for you, one for me.
 // |Zaphod  |One for Zaphod, one for me.
-//**************************************
+// *************************************
 
 // solution with providing name variable a default value if nothing else is provided
 // *********************************************************************************
