@@ -1,5 +1,5 @@
 # Two-fer solution
 # ****************
 
-def two_fer(name="you"):
+def two_fer(name = "you"):
     return "One for " + name + ", one for me."
