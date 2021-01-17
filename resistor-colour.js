@@ -22,7 +22,7 @@
 // happen to map to their index in the array: Better Be Right Or Your Great Big Values Go Wrong.
 // More information on the color encoding of resistors can be found in the
 // [Electronic color code Wikipedia article](https://en.wikipedia.org/wiki/Electronic_color_code)
-// **********************************************************************************************
+// *********************************************************************************************
 
 const colorCode = (colour) => {
   const colourObj = {
