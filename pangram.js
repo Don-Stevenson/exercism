@@ -10,13 +10,9 @@
 //  ******************************************************************************
 
 const isPangram = (text) => {
-  let alphabet = "abcdefghijklmnopqrstuvwxyz".split("");
-  let pangram = [];
-
-  for (let char of text.toLowerCase()) {
-    if (alphabet.includes(char) && !pangram.includes(char)) {
-      pangram.push(char);
-    }
-  }
-  return pangram.sort().toString() === alphabet.toString();
+   // make an array of all the letters of the alphabet
+   const alphabetArr = "abcdefghijklmnopqrstuvwxyz".split("");
+   // for every letter of the alpha bet, is it true or false that 
+   // the lower case text includes each letter
+   return alphabetArr.every(letter => text.toLowerCase().includes(letter));
 };
