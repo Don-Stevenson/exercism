@@ -1,5 +1,5 @@
 interface Colour { [colour: string]: number }
-
+// this is a comment, it cannot be strongly typed.
 const resisterObj: Colour = {
 black: 0,
 brown: 1,
