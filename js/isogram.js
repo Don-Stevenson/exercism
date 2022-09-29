@@ -13,17 +13,14 @@
 // The word *isograms*, however, is not an isogram, because the s repeats
 // **********************************************************************
 
-const isIsogram = (word) => {
-  if (!word) return true;
-  else {
-    const lowerCaseCleaned = word
-      .toLowerCase()
-      .match(/\b\w+('\w+)?/g)
-      .join("");
-    return lowerCaseCleaned.split("").every((value, index) => {
-      lowerCaseCleaned.indexOf(value) === index;
-    });
-  }
-};
-
+export const isIsogram = word => {
+  if (!word) return true
+  const lowerCaseCleaned = word
+    .toLowerCase()
+    .match(/\b\w+('\w+)?/g)
+    .join("")
+  return lowerCaseCleaned
+    .split("")
+    .every((value, index) => lowerCaseCleaned.indexOf(value) === index)
+}
 console.log(isIsogram("background"));
