@@ -29,12 +29,12 @@
 // - Etc.
 // *************************
 
-const transform = (letters) => {
-  let transformedData = {};
+const transform = letters => {
+  let transformedData = {}
   for (const key in letters) {
     for (const values of letters[key]) {
-      transformedData[values.toLowerCase()] = parseInt(key);
+      transformedData[values.toLowerCase()] = parseInt(key)
     }
   }
-  return transformedData;
-};
+  return transformedData
+}

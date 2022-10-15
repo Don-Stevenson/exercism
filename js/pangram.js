@@ -9,10 +9,10 @@
 //  insensitive. Input will not contain non-ASCII symbols.
 //  ******************************************************************************
 
-const isPangram = (text) => {
+const isPangram = text => {
   // make an array of all the letters of the alphabet
-  const alphabetArr = "abcdefghijklmnopqrstuvwxyz".split("");
+  const alphabetArr = "abcdefghijklmnopqrstuvwxyz".split("")
   // for every letter of the alphabet, return true or false if
   // the text parameter, set to lowercase, includes each letter
-  return alphabetArr.every((letter) => text.toLowerCase().includes(letter));
-};
+  return alphabetArr.every(letter => text.toLowerCase().includes(letter))
+}

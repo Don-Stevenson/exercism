@@ -25,13 +25,13 @@
 //********************************************************************************
 
 const compute = (leftStrand, rightStrand) => {
-  if (leftStrand.length === 0 && rightStrand.length === 0) return 0;
-  if (leftStrand.length === 0) throw new Error("left strand must not be empty");
+  if (leftStrand.length === 0 && rightStrand.length === 0) return 0
+  if (leftStrand.length === 0) throw new Error("left strand must not be empty")
   if (rightStrand.length === 0)
-    throw new Error("right strand must not be empty");
+    throw new Error("right strand must not be empty")
   if (rightStrand.length !== leftStrand.length)
-    throw new Error("left and right strands must be of equal length");
+    throw new Error("left and right strands must be of equal length")
   return leftStrand
     .split("")
-    .filter((current, index) => current !== rightStrand[index]).length;
-};
+    .filter((current, index) => current !== rightStrand[index]).length
+}

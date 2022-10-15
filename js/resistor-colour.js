@@ -24,7 +24,7 @@
 // [Electronic color code Wikipedia article](https://en.wikipedia.org/wiki/Electronic_color_code)
 // *********************************************************************************************
 
-const colorCode = (colour) => {
+const colorCode = colour => {
   const colourObj = {
     black: 0,
     brown: 1,
@@ -36,9 +36,9 @@ const colorCode = (colour) => {
     violet: 7,
     grey: 8,
     white: 9,
-  };
-  return colourObj[colour];
-};
+  }
+  return colourObj[colour]
+}
 
 const COLORS = [
   "black",
@@ -51,4 +51,4 @@ const COLORS = [
   "violet",
   "grey",
   "white",
-];
+]

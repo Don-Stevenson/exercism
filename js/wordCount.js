@@ -11,28 +11,28 @@
 // ```
 // **************************************************************
 
-const countWords = (sentence) => {
-  const wordsArr = sentence.toLowerCase().match(/\b\w+('\w+)?/g);
-  let result = {};
+const countWords = sentence => {
+  const wordsArr = sentence.toLowerCase().match(/\b\w+('\w+)?/g)
+  let result = {}
   for (const word of wordsArr) {
     if (result.hasOwnProperty(word)) {
-      result[word] += 1;
-    } else result[word] = 1;
+      result[word] += 1
+    } else result[word] = 1
   }
-  return result;
-};
+  return result
+}
 
 // found solution
 // **************
-const count = (text) => {
+const count = text => {
   text
     .toLowerCase()
     .match(/\b\w+('\w+)?/g)
     .reduce((prev, curr) => {
-      console.log({ prev }, { curr });
-      curr in prev ? (prev[curr] += 1) : (prev[curr] = 1);
-      return prev;
-    }, {});
-};
+      console.log({ prev }, { curr })
+      curr in prev ? (prev[curr] += 1) : (prev[curr] = 1)
+      return prev
+    }, {})
+}
 
-console.log(count("Testing 1 2 3!!"));
+console.log(count("Testing 1 2 3!!"))

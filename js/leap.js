@@ -22,5 +22,4 @@
 // 5 The year is not a leap year (it has 365 days).
 // ******************************************************************************
 
-const isLeap = (year) =>
-  (year % 4 === 0 && year % 100 !== 0) || year % 400 === 0;
+const isLeap = year => (year % 4 === 0 && year % 100 !== 0) || year % 400 === 0

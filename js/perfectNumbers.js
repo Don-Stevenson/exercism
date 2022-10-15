@@ -23,22 +23,22 @@
 
 // Implement a way to determine whether a given number is **perfect**.
 // Depending on your language track, you may also need
-// to implement a way to determine whether a given 
+// to implement a way to determine whether a given
 // number is **abundant** or **deficient**.
 // *******************************************************************
 
-const aliquotSum = (n) => {
-  let sum = 0;
+const aliquotSum = n => {
+  let sum = 0
   for (let i = 1; i < n; i++) {
-    if (n % i === 0) sum += i;
+    if (n % i === 0) sum += i
   }
-  return sum;
-};
+  return sum
+}
 
-const classify = (num) => {
+const classify = num => {
   if (num <= 0)
-    throw new Error("Classification is only possible for natural numbers.");
-  if (num === aliquotSum(num)) return "perfect";
-  if (num > aliquotSum(num)) return "deficient";
-  if (num < aliquotSum(num)) return "abundant";
-};
+    throw new Error("Classification is only possible for natural numbers.")
+  if (num === aliquotSum(num)) return "perfect"
+  if (num > aliquotSum(num)) return "deficient"
+  if (num < aliquotSum(num)) return "abundant"
+}

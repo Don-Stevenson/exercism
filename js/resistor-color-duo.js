@@ -41,8 +41,7 @@ const COLORS = [
   "violet",
   "grey",
   "white",
-];
+]
 
 const decodedValue = ([color1, color2]) =>
-  COLORS.indexOf(color1) * 10 + COLORS.indexOf(color2);
-  
+  COLORS.indexOf(color1) * 10 + COLORS.indexOf(color2)

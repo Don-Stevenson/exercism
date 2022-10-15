@@ -13,15 +13,15 @@
 // Write some code to determine whether a number is an Armstrong number
 // *********************************************************************
 
-const isArmstrongNumber = (num) => {
-  const numArr = num.toString().split("");
-  const exponent = numArr.length;
+const isArmstrongNumber = num => {
+  const numArr = num.toString().split("")
+  const exponent = numArr.length
   return (
     numArr.reduce(
       (acc, curr) => acc + Math.pow(parseInt(curr), exponent),
       0
     ) === num
-  );
-};
+  )
+}
 
 console.log(isArmstrongNumber(12))

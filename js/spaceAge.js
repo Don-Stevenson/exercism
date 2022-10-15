@@ -27,9 +27,9 @@ const plantAges = {
   saturn: 29.447498,
   uranus: 84.016846,
   neptune: 164.79132,
-};
+}
 
-const earthYearInSecs = 31557600;
+const earthYearInSecs = 31557600
 
 const age = (planet, ageInSeconds) =>
-  parseFloat((ageInSeconds / (earthYearInSecs * plantAges[planet])).toFixed(2));
+  parseFloat((ageInSeconds / (earthYearInSecs * plantAges[planet])).toFixed(2))

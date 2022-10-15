@@ -1,7 +1,7 @@
 // # Difference Of Squares
 // ***********************
 
-// Find the difference between the square of the sum and the sum of the squares 
+// Find the difference between the square of the sum and the sum of the squares
 // of the first N natural numbers.
 // The square of the sum of the first ten natural numbers is
 // (1 + 2 + ... + 10)² = 55² = 3025.
@@ -18,26 +18,26 @@
 
 export class Squares {
   constructor(num) {
-    this.num = num;
+    this.num = num
   }
 
   get sumOfSquares() {
-    let sumOfSq = 0;
+    let sumOfSq = 0
     for (let i = 1; i <= this.num; i++) {
-      sumOfSq += Math.pow(i, 2);
+      sumOfSq += Math.pow(i, 2)
     }
-    return sumOfSq;
+    return sumOfSq
   }
 
   get squareOfSum() {
-    let sum = 0;
+    let sum = 0
     for (let i = 1; i <= this.num; i++) {
-      sum += i;
+      sum += i
     }
-    return Math.pow(sum, 2);
+    return Math.pow(sum, 2)
   }
 
   get difference() {
-    return this.squareOfSum - this.sumOfSquares;
+    return this.squareOfSum - this.sumOfSquares
   }
 }

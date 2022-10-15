@@ -57,19 +57,19 @@ const codonToAA = {
   UAA: "Stop",
   UAG: "Stop",
   UGA: "Stop",
-};
+}
 
 // working solution
 // *****************
 
-const translate = (rna) => {
-  if (!rna) return [];
-  let aminoAcidArr = [];
-  const codonArr = rna.match(/.{1,3}/g);
+const translate = rna => {
+  if (!rna) return []
+  let aminoAcidArr = []
+  const codonArr = rna.match(/.{1,3}/g)
   for (const codon of codonArr) {
-    if (codonToAA[codon] === "Stop") return aminoAcidArr;
-    else if (codonToAA[codon] === undefined) throw new Error("Invalid codon");
-    else aminoAcidArr.push(codonToAA[codon]);
+    if (codonToAA[codon] === "Stop") return aminoAcidArr
+    else if (codonToAA[codon] === undefined) throw new Error("Invalid codon")
+    else aminoAcidArr.push(codonToAA[codon])
   }
-  return aminoAcidArr;
-};
+  return aminoAcidArr
+}

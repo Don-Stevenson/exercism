@@ -10,7 +10,7 @@
 // case the argument has been modified after the function execution.
 // *******************************************************************************************
 
-const MILLI = 1000;
-const BILLION = 1e9;
+const MILLI = 1000
+const BILLION = 1e9
 
-const gigasecond = (moment) => new Date(moment.getTime() + MILLI * BILLION);
+const gigasecond = moment => new Date(moment.getTime() + MILLI * BILLION)

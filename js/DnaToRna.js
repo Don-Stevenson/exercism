@@ -23,11 +23,11 @@ const DnaToRna = {
   C: "G",
   T: "A",
   A: "U",
-};
+}
 
-const toRna = (DNA) =>
+const toRna = DNA =>
   DNA.split("")
-    .map((nucleotide) => DnaToRna[nucleotide])
-    .join("");
+    .map(nucleotide => DnaToRna[nucleotide])
+    .join("")
 
-console.log(toRna("CGTA"));
+console.log(toRna("CGTA"))

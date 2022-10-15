@@ -23,32 +23,30 @@
 // Because constitution is 3, the constitution modifier is -4 and the hitpoints are 6
 // **********************************************************************************
 
-export const abilityModifier = (charConstitution) => {
-  if (charConstitution < 3)
-    throw new Error("Ability scores must be at least 3");
-  if (charConstitution > 18)
-    throw new Error("Ability scores can be at most 18");
-  return Math.floor((charConstitution - 10) / 2);
-};
+export const abilityModifier = charConstitution => {
+  if (charConstitution < 3) throw new Error("Ability scores must be at least 3")
+  if (charConstitution > 18) throw new Error("Ability scores can be at most 18")
+  return Math.floor((charConstitution - 10) / 2)
+}
 
 export class Character {
   static rollAbility() {
     return Array.from({ length: 4 }, () => Math.floor(Math.random() * 6) + 1)
       .sort()
       .slice(1, 4)
-      .reduce((a, b) => a + b, 0);
+      .reduce((a, b) => a + b, 0)
   }
 
   constructor() {
-    this.strength = Character.rollAbility();
-    this.dexterity = Character.rollAbility();
-    this.constitution = Character.rollAbility();
-    this.intelligence = Character.rollAbility();
-    this.wisdom = Character.rollAbility();
-    this.charisma = Character.rollAbility();
+    this.strength = Character.rollAbility()
+    this.dexterity = Character.rollAbility()
+    this.constitution = Character.rollAbility()
+    this.intelligence = Character.rollAbility()
+    this.wisdom = Character.rollAbility()
+    this.charisma = Character.rollAbility()
   }
 
   get hitpoints() {
-    return abilityModifier(this.constitution) + 10;
+    return abilityModifier(this.constitution) + 10
   }
 }

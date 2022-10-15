@@ -17,17 +17,17 @@ const romanNums = {
   V: 5,
   IV: 4,
   I: 1,
-};
+}
 
 // function that returns a roman numeral given an arabic number
 // ************************************************************
-const toRoman = (num) => {
-  let romanNum = "";
+const toRoman = num => {
+  let romanNum = ""
   for (const index in romanNums) {
     while (num >= romanNums[index]) {
-      romanNum += index;
-      num -= romanNums[index];
+      romanNum += index
+      num -= romanNums[index]
     }
   }
-  return romanNum;
-};
+  return romanNum
+}

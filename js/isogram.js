@@ -14,7 +14,7 @@
 // **********************************************************************
 
 export const isIsogram = word => {
-  if (!word) return true
+  if (!word) true
   const lowerCaseCleaned = word
     .toLowerCase()
     .match(/\b\w+('\w+)?/g)
